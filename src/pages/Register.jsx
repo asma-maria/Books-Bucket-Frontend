@@ -62,9 +62,7 @@ const Register = ()=>{
 
     return (
         <div className="
-        max-w-screen-sm mx-2 my-10 md:w-3/4 md:mx-auto space-y-2 border p-8 md:px-32 
-        shadow-md rounded-lg
-        bg-white z-20">  {
+        max-w-screen-sm mx-4 my-10 md:w-1/2 md:mx-auto rounded-lg border p-10 bg-emerald-50">  {
                 loader ? 
                 <div className="w-full h-full flex items-center justify-center">
                     <Loader></Loader>
@@ -137,7 +135,7 @@ const Register = ()=>{
                     </label>
                    
                     <div className="flex justify-center">
-                        <button type="submit" className="btn btn-wide">Register</button>
+                        <button type="submit" className="btn btn-accent">Register</button>
                     </div>
                 </form>
                 <div className="text-sm text-slate-800 text-center p-2">

@@ -6,6 +6,7 @@ import toast from "react-hot-toast";
 import { AuthContext } from "../provider/AuthProvider"
 import { GithubAuthProvider, GoogleAuthProvider } from "firebase/auth"
 import Loader from "./Loader";
+import { Helmet } from "react-helmet";
 
 const Login = ()=>{
     const [loader, setLoader] = useState(false);
@@ -29,7 +30,7 @@ const Login = ()=>{
             navigate( state ? state : ROUTES.HOME );
         })
         .catch((error)=>{
-            toast.error('Request could not be processed')
+            toast.error('Login Error')
             setLoader(false);
             console.error(error);
         });
@@ -44,7 +45,7 @@ const Login = ()=>{
             navigate( state ? state : ROUTES.BOOKS );
         })
         .catch((error)=>{
-            toast.error('Request could not be processed')
+            toast.error('Login Error')
             setLoader(false);
             console.error(error);
         });
@@ -59,16 +60,22 @@ const Login = ()=>{
             navigate( state ? state : ROUTES.BOOKS );
         })
         .catch((error)=>{
-            toast.error('Request could not be processed')
+            toast.error('Login Error')
             setLoader(false);
             console.error(error);
         });
     }
 
     return (
-        <div className="max-w-screen-sm mx-2 my-10 md:w-3/4 md:mx-auto space-y-2 
-        border p-8 md:px-32 shadow-md rounded-lg
-        bg-white z-20">
+        <>
+
+        <Helmet>
+            <title>
+                Books Bucket | Login 
+            </title>
+        </Helmet>
+        <div className="
+        max-w-screen-sm mx-4 my-10 md:w-1/2 md:mx-auto  rounded-lg border p-10 bg-emerald-50 ">
             {
                 loader ? 
                 <div className="w-full h-full flex items-center justify-center">
@@ -105,7 +112,7 @@ const Login = ()=>{
                         <input id="password" type="password" className="grow" placeholder="******" />
                         </label>
                         <div className="flex justify-center">
-                            <button type="submit" className="btn btn-wide">Login</button>
+                            <button type="submit" className="btn btn-outline bg-green-200">Login</button>
                         </div>
                     </form>
                     
@@ -136,6 +143,8 @@ const Login = ()=>{
                 </>
             }
         </div>   
+        
+        </>
     )
 }
 

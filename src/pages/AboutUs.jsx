@@ -1,5 +1,5 @@
 import React from 'react';
-import image from "./aboutuslogo.jpg"
+import image from "./aboutuslogo.png"
 
 const AboutUs = () => {
   return (
@@ -20,9 +20,9 @@ const AboutUs = () => {
 
           {/* Owner Details */}
           <div className="text-center md:text-left max-w-lg">
-            <h3 className="text-2xl font-bold text-gray-800 mb-2">John Doe</h3>
+            <h3 className="text-2xl font-bold text-gray-800 mb-2">Maria</h3>
             <p className="text-lg text-gray-600 mb-4">
-              John is a passionate web developer with over 10 years of experience in creating beautiful and functional web applications. He loves turning complex problems into simple, intuitive designs. When he's not coding, you'll find him exploring new tech or enjoying the outdoors.
+              Maria is a passionate web developer with over 2 years of experience in creating beautiful and functional web applications. She loves turning complex problems into simple, intuitive designs. When she's not coding, you'll find her exploring new tech or enjoying the outdoors.
             </p>
             <div className="flex justify-center md:justify-start space-x-4">
               <a

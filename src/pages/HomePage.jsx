@@ -1,5 +1,7 @@
 
-import TopBooks from "../components/homepage/TopBooks"
+
+import FAQs from "../components/faq/FAQs"
+import Categories from "../components/homepage/categories/Categories"
 import AboutUs from "./AboutUs"
 import BooksBanner from "./BooksBanner"
 import ContactUs from "./ContactUs"
@@ -13,8 +15,9 @@ function HomePage() {
             <div className="space-y-12 md:mx-32 md:my-14">
             
                 <HowWorks></HowWorks>
-                <TopBooks></TopBooks>
+                <Categories></Categories>
                 <ContactUs></ContactUs>
+                <FAQs></FAQs>
                 <AboutUs></AboutUs>
                 
             </div>

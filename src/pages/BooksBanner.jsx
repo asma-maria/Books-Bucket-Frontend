@@ -6,11 +6,11 @@ const BooksBanner = () => {
 
   // Array of messages to display in the banner
   const messages = [
-    "Unlock Your Potential with Expert-Led Courses!",
-    "Join Thousands of Successful Learners Today!",
-    "Boost Your Career with In-Demand Skills!",
-    "Sign Up Now and Get Access to Free Resources!",
-    "Enroll Today and Start Learning Tomorrow!"
+    "Unlock Your Potential with Lots of Books!",
+    "Join Thousands of Successful Readers Today!",
+    "Boost Your Knowledge with In-Demand Resurces!",
+    "Sign Up Now and Get Access to Purchage Books!",
+    "Login Today and Start Reading Tomorrow!"
   ];
 
   // Function to switch messages every 3 seconds
@@ -28,11 +28,11 @@ const BooksBanner = () => {
           {messages[currentMessage]}
         </h1>
         <p className="text-lg">
-          Take the next step in your learning journey with our comprehensive online courses.
+          Take the next step in your reading journey with our comprehensive online book shop.
         </p>
         <Link to="/login">
         <button className="bg-yellow-400 hover:bg-yellow-500 text-gray-800 font-semibold py-3 px-6 rounded-lg shadow-lg transition duration-300">
-          Enroll Now
+          Login Now
         </button>
         </Link>
       </div>
